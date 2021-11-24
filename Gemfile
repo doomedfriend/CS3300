@@ -7,7 +7,7 @@ ruby '2.7.0'
 gem 'rails', '~> 5.2.4'
 
 gem 'mini_racer'
-
+gem 'devise'
 
 
 # Use Puma as the app server
@@ -52,7 +52,6 @@ group :development, :test do
 
   gem 'factory_bot_rails'
   gem 'faker'
-  gem 'devise'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

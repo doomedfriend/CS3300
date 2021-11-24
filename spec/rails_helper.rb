@@ -9,6 +9,30 @@ SimpleCov.start 'rails' do
   add_filter '/bin/'
   add_filter '/db/'
   add_filter '/spec/' # for rspec
+  add_filter '/app/channels/'
+  add_filter '/app/jobs/'
+
+end
+
+# ...
+require 'rspec/rails'
+
+# Add these after require 'rspec/rails'
+require 'devise'
+require_relative 'support/controller_macros'
+#require 'FactoryBot'
+# ...
+
+RSpec.configure do |config|
+    
+    # ...
+    config.fixture_path = "#{::Rails.root}/spec/features"
+    # Add these
+    config.include Devise::Test::ControllerHelpers, :type => :controller
+    config.include Devise::Test::IntegrationHelpers, :type => :feature
+    config.include FactoryBot::Syntax::Methods
+    config.include ControllerMacros, :type => :controller
+    config.extend ControllerMacros, :type => :controller
 end
 
 

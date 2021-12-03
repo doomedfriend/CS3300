@@ -15,16 +15,23 @@
  @import "bootstrap";
 
 
- .flexB{
+ .projectBox{
      display:flex;
      flex-wrap: wrap;
      justify-content: space evenly;
      gap: 20px;
  }
 
- .containerW{
+ .projectBoxWidth{
      width:300px;
      min-height:200px;
-     background-color: darkmagenta;
+     background-color: rgb(0, 255, 179);
+ }
+ .aboutMe{
+     display:flex;
+     flex-wrap: wrap;
+     justify-content: space evenly;
+     background-color: dimgrey;
+
  }
 

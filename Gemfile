@@ -5,7 +5,7 @@ ruby '2.7.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4'
-gem 'jquery-rails'
+
 
 gem 'mini_racer'
 gem 'devise'
@@ -51,6 +51,9 @@ group :development, :test do
   gem 'bootstrap', '~> 4.6.1'
   gem 'rspec-rails', '~> 3.7'
   gem 'capybara'
+  gem 'jquery-rails'
+  #gem 'popper_js', '~> 2.9.3'
+
 
   gem 'factory_bot_rails'
   gem 'faker'

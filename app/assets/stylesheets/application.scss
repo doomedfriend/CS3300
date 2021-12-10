@@ -25,13 +25,13 @@
  .projectBoxWidth{
      width:300px;
      min-height:200px;
-     background-color: rgb(0, 255, 179);
+     background-color: rgba(0, 255, 179, 0.267);
  }
  .aboutMe{
      display:flex;
      flex-wrap: wrap;
      justify-content: space evenly;
-     background-color: dimgrey;
+     background-color: rgba(192, 192, 192, 0.575);
 
  }
  @import "bootstrap";
